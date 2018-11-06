@@ -1,0 +1,47 @@
+crear proyecto "app-shop"
+composer create-project --prefer-dist laravel/laravel app-shop
+
+levantar proyecto local
+php artisan serve
+
+crear un controlador
+php artisan make:controller TestController
+
+crear sistema de autenticación
+php artisan make:auth
+
+ejecutar las migraciones existentes
+php artisan migrate
+
+crear una migración
+php artisan make:migration
+
+crear un modelo
+php artisan make:model
+
+crear un modelo Category con su migración
+php artisan make:model Category -m
+
+resetear una migración (el ultimo batch)
+php artisan migrate:rollback
+
+deshacer  todas las migraciones
+php artisan migrate:reset
+
+crear un seeder
+php artisan make:seeder UserTableSeeder
+
+ejecutar los seeder existentes
+php artisan db:seed
+
+resetear todas las migraciones y ejecutar los seeder
+php artisan migrate:refresh --seed
+
+crear un factory (a partir de la version 5.5)
+php artisan make:factory ProductFactory
+
+para iniciar la consola tinker
+php artisan tinker
+
+crear un nuevo middleware
+php artisan make:middleware AdminMiddleware
